@@ -32,7 +32,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: Dockerfile
+          file: DockerFile
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/my-image-name:${{ steps.timestamp.outputs.TIMESTAMP }}
